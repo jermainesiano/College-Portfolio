@@ -434,11 +434,13 @@
 
             const initialActiveSection = document.querySelector('.year-section.is-visible');
              if (initialActiveSection) {
-                 const initialVideo = initialActiveSection.querySelector('.carousel-video');
+                const initialVideo = initialActiveSection.querySelector('.carousel-video');
                  const initialCarouselItem = initialVideo?.closest('.carousel-item');
                  if (initialVideo && initialCarouselItem?.classList.contains('active')) {
                     initialVideo.play().catch(error => {
                         console.warn("Initial autoplay prevented: ", error);
+                    });
+                }
              }
 
         });
