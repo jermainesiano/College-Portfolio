@@ -5,70 +5,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jermaine Siano Bantoto - ePortfolio</title>
 
+    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
-
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-
+    <!-- ======== Hero Section ======== -->
     <div class="hero-section">
         <div class="overlay"></div>
-
-
+        <!-- Header -->
         <header class="site-header container-fluid">
-
             <nav class="d-flex justify-content-between align-items-center py-3">
-
                 <div class="nav-placeholder">
-
                      <a href="#" class="btn btn-outline-light enquire-btn invisible" aria-hidden="true">TIMELINE</a>
                 </div>
-
-
                 <div class="logo text-center">
                     <a href="#" class="text-decoration-none">
                         <span class="logo-main">JERMAIN</span><span class="logo-e">E</span><br>
                         <span class="logo-sub">PORTFOLIO</span>
                     </a>
                 </div>
-
-
                 <div>
-
                     <a href="#timeline" class="btn btn-outline-light enquire-btn">TIMELINE</a>
                 </div>
             </nav>
-
             <hr class="header-divider">
         </header>
-
-
+        <!-- Main Content -->
         <main class="container d-flex align-items-center justify-content-center text-center flex-grow-1">
             <div class="hero-content">
                 <h1>JERMAINE SIANO BANTOTO</h1>
             </div>
         </main>
-    </div>
+    </div> <!-- End hero-section -->
 
 
+    <!-- ======== Combined Timeline Visual & Year Sections ======== -->
     <div id="timeline" class="container-fluid timeline-outer-container">
         <div class="row">
 
-
+            <!-- == Left Column: Timeline Visualization == -->
             <div class="col-md-4 timeline-visual-col sticky-top">
-
                  <div class="timeline-header">
                     <span class="mode-icon">⊙</span>
                     <span class="mode-text">Timeline</span>
                 </div>
                 <div class="timeline">
                     <div class="timeline-line"></div>
-                    <div class="timeline-progress"></div>
+                    {/* Progress line is optional with this structure */}
+                    {/* <div class="timeline-progress"></div> */}
                     <ul class="timeline-items">
                          <li class="timeline-item" data-year="2022">
                             <div class="timeline-marker"></div>
@@ -82,6 +73,7 @@
                              <div class="timeline-marker"></div>
                             <div class="timeline-year">2024</div>
                         </li>
+                        {/* Ensure initial active matches initial visible section */}
                         <li class="timeline-item active" data-year="current">
                             <div class="timeline-marker"></div>
                             <div class="timeline-year">Current</div>
@@ -90,18 +82,18 @@
                 </div>
             </div>
 
-
+            <!-- == Right Column: Stacked Year Sections == -->
             <div class="col-md-8 year-sections-container">
 
+                 <!-- Section for 2022 -->
+                 <!-- IMPORTANT: Replace with your actual background image path -->
                 <section class="year-section" id="section-2022" data-year="2022" style="background-image: url('path/to/your/2022_background.jpg');">
                    <div class="year-overlay"></div>
                    <div class="year-content container">
                         <h2 class="content-title">2022: Start of Journey</h2>
                         <p class="content-description">Started BSED-English at NORSU...</p>
-
                         <div id="carousel-2022" class="carousel slide timeline-carousel" data-bs-ride="carousel">
                             <div class="carousel-indicators">
-                                {/* Correct number of indicators (4 items) */}
                                 <button type="button" data-bs-target="#carousel-2022" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                                 <button type="button" data-bs-target="#carousel-2022" data-bs-slide-to="1" aria-label="Slide 2"></button>
                                 <button type="button" data-bs-target="#carousel-2022" data-bs-slide-to="2" aria-label="Slide 3"></button>
@@ -109,39 +101,21 @@
                             </div>
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
-                                    {/* IMPORTANT: Replace src with your actual image path */}
                                     <img src="painting_2022.jpg" class="d-block w-100" alt="Art Appreciation Painting">
-                                    <div class="carousel-caption d-none d-md-block">
-                                        <h5>Art Appreciation</h5>
-                                        <p>This is our final project...</p>
-                                    </div>
+                                    <div class="carousel-caption d-none d-md-block"><h5>Art Appreciation</h5><p>...</p></div>
                                 </div>
                                 <div class="carousel-item">
-                                     {/* IMPORTANT: Replace src */}
                                     <img src="paula_2022.jpg" class="d-block w-100" alt="Paulita Gomez Roleplay">
-                                    <div class="carousel-caption d-none d-md-block">
-                                        <h5>Paulita Gomex</h5>
-                                        <p>Paulita Gomez is the entitled...</p>
-                                    </div>
+                                    <div class="carousel-caption d-none d-md-block"><h5>Paulita Gomex</h5><p>...</p></div>
                                 </div>
                                 <div class="carousel-item">
-                                    {/* IMPORTANT: Replace src */}
                                     <img src="dagliang_talumpati_2022.jpg" class="d-block w-100" alt="Dagliang Talumpati">
-                                    <div class="carousel-caption d-none d-md-block">
-                                        <h5>Dagliang Talumpati</h5>
-                                        <p>After years of pandemic...</p>
-                                    </div>
+                                    <div class="carousel-caption d-none d-md-block"><h5>Dagliang Talumpati</h5><p>...</p></div>
                                 </div>
                                 <div class="carousel-item">
-                                    {/* IMPORTANT: Replace src, fix typo 'playsinline' */}
                                     <video class="d-block w-100 carousel-video" controls muted playsinline preload="metadata">
-                                        <source src="tatarin_2022.mp4" type="video/mp4">
-                                        Your browser does not support the video tag.
-                                    </video>
-                                    <div class="carousel-caption d-none d-md-block">
-                                        <h5>Tatarin</h5>
-                                        <p>This film delves into the rise...</p>
-                                    </div>
+                                        <source src="tatarin_2022.mp4" type="video/mp4">Your browser does not support the video tag.</video>
+                                    <div class="carousel-caption d-none d-md-block"><h5>Tatarin</h5><p>...</p></div>
                                 </div>
                             </div>
                             <button class="carousel-control-prev" type="button" data-bs-target="#carousel-2022" data-bs-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="visually-hidden">Previous</span></button>
@@ -150,69 +124,43 @@
                    </div>
                 </section>
 
-
+                <!-- Section for 2023 -->
+                 <!-- IMPORTANT: Replace with your actual background image path -->
                 <section class="year-section" id="section-2023" data-year="2023" style="background-image: url('path/to/your/2023_background.jpg');">
                     <div class="year-overlay"></div>
                     <div class="year-content container">
                         <h2 class="content-title">2023: Exploration</h2>
                         <p class="content-description">Began exploring...</p>
-
                         <div id="carousel-2023" class="carousel slide timeline-carousel" data-bs-ride="carousel">
                             <div class="carousel-indicators">
-                                {/* Correct number of indicators (5 items) */}
                                 <button type="button" data-bs-target="#carousel-2023" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                                 <button type="button" data-bs-target="#carousel-2023" data-bs-slide-to="1" aria-label="Slide 2"></button>
                                 <button type="button" data-bs-target="#carousel-2023" data-bs-slide-to="2" aria-label="Slide 3"></button>
                                 <button type="button" data-bs-target="#carousel-2023" data-bs-slide-to="3" aria-label="Slide 4"></button>
                                 <button type="button" data-bs-target="#carousel-2023" data-bs-slide-to="4" aria-label="Slide 5"></button>
                             </div>
-                            <div class="carousel-inner"> {/* Ensure all items are INSIDE this */}
+                            <div class="carousel-inner">
                                 <div class="carousel-item active">
-                                     {/* IMPORTANT: Replace src */}
                                     <img src="first_demo.jpg" class="d-block w-100" alt="First Teaching Demo">
-                                    <div class="carousel-caption d-none d-md-block">
-                                        <h5>Teaching Demonstration 2023</h5>
-                                        <p>This was my first-ever...</p>
-                                    </div>
+                                    <div class="carousel-caption d-none d-md-block"><h5>Teaching Demonstration 2023</h5><p>...</p></div>
                                 </div>
                                 <div class="carousel-item">
-                                     {/* IMPORTANT: Replace src */}
                                     <img src="diaz_class_2023.jpg" class="d-block w-100" alt="Dr Diaz Class">
-                                    <div class="carousel-caption d-none d-md-block">
-                                        <h5>One on One Oral Recitation</h5>
-                                        <p>A success!--- this is the only phrase...</p>
-                                    </div>
+                                    <div class="carousel-caption d-none d-md-block"><h5>One on One Oral Recitation</h5><p>...</p></div>
                                 </div>
                                  <div class="carousel-item">
-                                      {/* IMPORTANT: Replace src */}
                                      <img src="showcase_port.jpg" class="d-block w-100" alt="Educational Technology Display">
-                                    <div class="carousel-caption d-none d-md-block">
-                                        <h5>Educational Technology Display</h5>
-                                        <p>Another proud moment!...</p>
-                                    </div>
+                                    <div class="carousel-caption d-none d-md-block"><h5>Educational Technology Display</h5><p>...</p></div>
                                 </div>
                                 <div class="carousel-item">
-                                    {/* IMPORTANT: Replace src, fix typo 'playsinline' */}
                                     <video class="d-block w-100 carousel-video" controls muted playsinline preload="metadata">
-                                        <source src="pinboard_2023.mp4" type="video/mp4">
-                                         Your browser does not support the video tag.
-                                    </video>
-                                    <div class="carousel-caption d-none d-md-block">
-                                        <h5>Pin Board Designing</h5>
-                                        <p>I struggled a lot in designing...</p>
-                                    </div>
+                                        <source src="pinboard_2023.mp4" type="video/mp4">Your browser does not support the video tag.</video>
+                                    <div class="carousel-caption d-none d-md-block"><h5>Pin Board Designing</h5><p>...</p></div>
                                 </div>
-                                {/* FIX: Moved this item INSIDE carousel-inner */}
                                 <div class="carousel-item">
-                                     {/* IMPORTANT: Replace src, fix typo 'playsinline' */}
                                     <video class="d-block w-100 carousel-video" controls muted playsinline preload="metadata">
-                                        <source src="story_telling_2023.mp4" type="video/mp4">
-                                        Your browser does not support the video tag.
-                                    </video>
-                                    <div class="carousel-caption d-none d-md-block">
-                                        <h5>Story Telling</h5>
-                                        <p>The weather and the vibe led us...</p>
-                                    </div>
+                                        <source src="story_telling_2023.mp4" type="video/mp4">Your browser does not support the video tag.</video>
+                                    <div class="carousel-caption d-none d-md-block"><h5>Story Telling</h5><p>...</p></div>
                                 </div>
                             </div>
                             <button class="carousel-control-prev" type="button" data-bs-target="#carousel-2023" data-bs-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="visually-hidden">Previous</span></button>
@@ -221,84 +169,54 @@
                     </div>
                 </section>
 
-
+                 <!-- Section for 2024 -->
+                  <!-- IMPORTANT: Replace with your actual background image path -->
                  <section class="year-section" id="section-2024" data-year="2024" style="background-image: url('path/to/your/2024_background.jpg');">
                    <div class="year-overlay"></div>
                    <div class="year-content container">
                        <h2 class="content-title">2024: Growth & Skill Development</h2>
                        <p class="content-description">Focused on developing...</p>
-
                        <div id="carousel-2024" class="carousel slide timeline-carousel" data-bs-ride="carousel">
                             <div class="carousel-indicators">
-                                {/* Correct number of indicators (7 items) */}
                                 <button type="button" data-bs-target="#carousel-2024" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                                 <button type="button" data-bs-target="#carousel-2024" data-bs-slide-to="1" aria-label="Slide 2"></button>
                                 <button type="button" data-bs-target="#carousel-2024" data-bs-slide-to="2" aria-label="Slide 3"></button>
                                 <button type="button" data-bs-target="#carousel-2024" data-bs-slide-to="3" aria-label="Slide 4"></button>
                                 <button type="button" data-bs-target="#carousel-2024" data-bs-slide-to="4" aria-label="Slide 5"></button>
                                 <button type="button" data-bs-target="#carousel-2024" data-bs-slide-to="5" aria-label="Slide 6"></button>
-                                <button type="button" data-bs-target="#carousel-2024" data-bs-slide-to="6" aria-label="Slide 7"></button> {/* Video is slide 7 */}
+                                <button type="button" data-bs-target="#carousel-2024" data-bs-slide-to="6" aria-label="Slide 7"></button>
                             </div>
                             <div class="carousel-inner">
-                                {/* FIX: Only first item is active */}
                                 <div class="carousel-item active">
-                                     {/* IMPORTANT: Replace src */}
                                     <img src="toefl_lp_2024.jpg" class="d-block w-100" alt="TOEFL Lesson Plan">
-                                    <div class="carousel-caption d-none d-md-block">
-                                        <h5>TOEFL Lesson Planning</h5>
-                                        <p>This is one of the hardest...</p>
-                                    </div>
+                                    <div class="carousel-caption d-none d-md-block"><h5>TOEFL Lesson Planning</h5><p>...</p></div>
                                 </div>
                                 <div class="carousel-item">
-                                     {/* IMPORTANT: Replace src */}
                                     <img src="balak_making.jpg" class="d-block w-100" alt="Balak Making">
-                                    <div class="carousel-caption d-none d-md-block">
-                                        <h5>Balak-Making</h5>
-                                        <p>This photo will remind me...</p>
-                                    </div>
+                                    <div class="carousel-caption d-none d-md-block"><h5>Balak-Making</h5><p>...</p></div>
                                 </div>
                                  <div class="carousel-item">
-                                      {/* IMPORTANT: Replace src */}
                                      <img src="leonor_2024.jpg" class="d-block w-100" alt="Leonor Rivera Roleplay">
-                                    <div class="carousel-caption d-none d-md-block">
-                                        <h5>For the Love of Leonor Rivera</h5>
-                                        <p>Our last roleplay...</p>
-                                    </div>
+                                    <div class="carousel-caption d-none d-md-block"><h5>For the Love of Leonor Rivera</h5><p>...</p></div>
                                 </div>
                                  <div class="carousel-item">
-                                      {/* IMPORTANT: Replace src */}
                                      <img src="demo_2024.jpg" class="d-block w-100" alt="Second Teaching Demo">
-                                    <div class="carousel-caption d-none d-md-block">
-                                        <h5>Second Teaching Demonstration</h5>
-                                        <p>This time, like a phoenix...</p>
-                                    </div>
+                                    <div class="carousel-caption d-none d-md-block"><h5>Second Teaching Demonstration</h5><p>...</p></div>
                                 </div>
                                  <div class="carousel-item">
-                                      {/* IMPORTANT: Replace src - CR2 won't work, use JPG/PNG/WEBP */}
+                                      {/* IMPORTANT: Use JPG/PNG/WEBP format */}
                                       <img src="midsummer_play.jpg" class="d-block w-100" alt="Midsummer's Night Dream Play">
-                                    <div class="carousel-caption d-none d-md-block">
-                                        <h5>Midsummer's Night Dream</h5>
-                                        <p>I got the lead role...</p>
-                                    </div>
+                                    <div class="carousel-caption d-none d-md-block"><h5>Midsummer's Night Dream</h5><p>...</p></div>
                                   </div>
                                  <div class="carousel-item">
-                                      {/* IMPORTANT: Replace src */}
                                       <img src="film_fest_2024.jpg" class="d-block w-100" alt="Film Festival Awarding">
-                                    <div class="carousel-caption d-none d-md-block">
-                                        <h5>Film Festival</h5>
-                                        <p>Our group secured the first place!</p>
-                                    </div>
+                                    <div class="carousel-caption d-none d-md-block"><h5>Film Festival</h5><p>...</p></div>
                                 </div>
                                 <div class="carousel-item">
-                                    {/* IMPORTANT: Replace src, fix typo 'playsinline' */}
+                                     {/* IMPORTANT: Replace src */}
                                     <video class="d-block w-100 carousel-video" controls muted playsinline preload="metadata">
-                                        <source src="path/to/your/2024_video.mp4" type="video/mp4">
-                                        Your browser does not support the video tag.
-                                    </video>
-                                    <div class="carousel-caption d-none d-md-block">
-                                        <h5>Sample</h5>
-                                        <p>Sample Video Description Caption</p>
-                                    </div>
+                                        <source src="path/to/your/2024_video.mp4" type="video/mp4"> Your browser does not support the video tag.</video>
+                                    <div class="carousel-caption d-none d-md-block"><h5>Sample</h5><p>Sample Video Description Caption</p></div>
                                 </div>
                             </div>
                             <button class="carousel-control-prev" type="button" data-bs-target="#carousel-2024" data-bs-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="visually-hidden">Previous</span></button>
@@ -307,47 +225,34 @@
                     </div>
                 </section>
 
-
+                <!-- Section for Current -->
+                 <!-- IMPORTANT: Replace with your actual background image path -->
+                 {/* Set this one visible initially */}
                 <section class="year-section is-visible" id="section-current" data-year="current" style="background-image: url('path/to/your/current_background.jpg');">
                    <div class="year-overlay"></div>
                    <div class="year-content container">
                        <h2 class="content-title">Current Focus & Future Goals</h2>
                        <p class="content-description">Currently working on...</p>
-
                         <div id="carousel-current" class="carousel slide timeline-carousel" data-bs-ride="carousel">
                             <div class="carousel-indicators">
-                                 {/* Correct number of indicators (3 items) */}
                                 <button type="button" data-bs-target="#carousel-current" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                                 <button type="button" data-bs-target="#carousel-current" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                                <button type="button" data-bs-target="#carousel-current" data-bs-slide-to="2" aria-label="Slide 3"></button> {/* Video is slide 3 */}
+                                <button type="button" data-bs-target="#carousel-current" data-bs-slide-to="2" aria-label="Slide 3"></button>
                             </div>
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
-                                     {/* IMPORTANT: Replace src */}
                                     <img src="thailand_2025.jpg" class="d-block w-100" alt="Thailand Event">
-                                    <div class="carousel-caption d-none d-md-block">
-                                        <h5>Thailand</h5>
-                                        <p>Our muse with Dr. Craig Refugio</p>
-                                    </div>
+                                    <div class="carousel-caption d-none d-md-block"><h5>Thailand</h5><p>...</p></div>
                                 </div>
                                 <div class="carousel-item">
-                                     {/* IMPORTANT: Replace src */}
                                     <img src="event_2024.jpg" class="d-block w-100" alt="Literary Festival">
-                                    <div class="carousel-caption d-none d-md-block">
-                                        <h5>Literary Festival</h5>
-                                        <p>English Aficionados with mentors</p>
-                                    </div>
+                                    <div class="carousel-caption d-none d-md-block"><h5>Literary Festival</h5><p>...</p></div>
                                 </div>
                                 <div class="carousel-item">
-                                    {/* IMPORTANT: Replace src, fix typo 'playsinline' */}
+                                    {/* IMPORTANT: Replace src */}
                                     <video class="d-block w-100 carousel-video" controls muted playsinline preload="metadata">
-                                        <source src="path/to/your/current_video.mp4" type="video/mp4">
-                                        Your browser does not support the video tag.
-                                    </video>
-                                    <div class="carousel-caption d-none d-md-block">
-                                        <h5>Sample</h5>
-                                        <p>Sample Video Description Caption</p>
-                                    </div>
+                                        <source src="path/to/your/current_video.mp4" type="video/mp4">Your browser does not support the video tag.</video>
+                                    <div class="carousel-caption d-none d-md-block"><h5>Sample</h5><p>Sample Video Description Caption</p></div>
                                 </div>
                             </div>
                             <button class="carousel-control-prev" type="button" data-bs-target="#carousel-current" data-bs-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="visually-hidden">Previous</span></button>
@@ -356,22 +261,26 @@
                    </div>
                 </section>
 
-            </div>
-        </div>
-    </div>
+            </div> <!-- End Right Column -->
+        </div> <!-- End row -->
+    </div> <!-- End timeline-outer-container -->
 
 
+    <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
         <script>
         document.addEventListener('DOMContentLoaded', () => {
+            // --- Element Selectors ---
             const timelineItems = document.querySelectorAll('.timeline-item');
             const yearSections = document.querySelectorAll('.year-section');
-            const timelineProgress = document.querySelector('.timeline-progress');
-            const timelineList = document.querySelector('.timeline-items');
+            // const timelineProgress = document.querySelector('.timeline-progress'); // Optional
+            // const timelineList = document.querySelector('.timeline-items'); // Optional
             const allCarousels = document.querySelectorAll('.carousel');
             const allCarouselVideos = document.querySelectorAll('.carousel-video');
 
+            // --- Video Pause/Play Logic ---
             allCarousels.forEach(carousel => {
+                // Pause outgoing video before slide starts
                 carousel.addEventListener('slide.bs.carousel', (event) => {
                     const currentActiveItem = carousel.querySelector('.carousel-item.active');
                     if (currentActiveItem) {
@@ -379,6 +288,7 @@
                         if (video && !video.paused) { video.pause(); }
                     }
                 });
+                // Play incoming video after slide finishes
                 carousel.addEventListener('slid.bs.carousel', (event) => {
                     const newActiveItem = carousel.querySelector('.carousel-item.active');
                     if (newActiveItem) {
@@ -390,60 +300,127 @@
                 });
             });
 
+            // --- Prevent Video Clicks from Changing Slides ---
             allCarouselVideos.forEach(video => {
                 video.addEventListener('click', (event) => {
-                    event.stopPropagation();
+                    event.stopPropagation(); // Stop click from bubbling to carousel
                 });
             });
 
-
+            // --- Function to Update Active Marker ---
             function setActiveMarker(year) {
                 let activeItem = null;
                 timelineItems.forEach(item => {
-                    if (item.dataset.year === year) {
-                        item.classList.add('active');
+                    const isActive = item.dataset.year === year;
+                    item.classList.toggle('active', isActive);
+                    if (isActive) {
                         activeItem = item;
-                    } else {
-                        item.classList.remove('active');
                     }
                 });
+                // Optional: Scroll the active marker into view in the sticky column if needed
+                // if (activeItem) {
+                //    activeItem.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+                // }
                 return activeItem;
             }
 
+            // --- Intersection Observer for Year Sections (Revised Callback) ---
             const sectionObserverOptions = {
-                root: null,
-                rootMargin: '0px',
-                threshold: 0.6
+                root: null, // relative to viewport
+                rootMargin: '0px 0px -20% 0px', // Trigger when section top enters lower 80% of viewport
+                threshold: 0.1 // Need at least 10% visible to be considered
             };
-            const sectionObserverCallback = (entries, observer) => {};
+
+            let currentlyVisibleYear = null; // Keep track of the manually set year
+
+            const sectionObserverCallback = (entries, observer) => {
+                let bestEntry = null;
+
+                entries.forEach(entry => {
+                    // Consider entries that are intersecting significantly
+                    if (entry.isIntersecting && entry.intersectionRatio > (bestEntry?.intersectionRatio || 0) && entry.intersectionRatio >= 0.1) {
+                       bestEntry = entry;
+                    }
+                });
+
+                // Update based on the single best entry found via scrolling
+                if (bestEntry) {
+                    const scrolledToYear = bestEntry.target.dataset.year;
+
+                    // Only update via scroll if it's different from the manually clicked one
+                    // or if no manual click is tracked
+                    if (scrolledToYear !== currentlyVisibleYear) {
+                        currentlyVisibleYear = null; // Reset manual tracker if scroll takes over
+                        yearSections.forEach(section => {
+                            section.classList.toggle('is-visible', section === bestEntry.target);
+                        });
+                        setActiveMarker(scrolledToYear);
+                    }
+                }
+                // Note: If no entry is sufficiently visible (e.g., fast scroll between sections),
+                // the display might briefly show nothing or the last visible section.
+            };
+
             const sectionObserver = new IntersectionObserver(sectionObserverCallback, sectionObserverOptions);
             yearSections.forEach(section => sectionObserver.observe(section));
 
+            // --- Click Listener for Timeline Items ---
             timelineItems.forEach(item => {
-                item.addEventListener('click', () => {
-                    const year = item.dataset.year;
-                    const targetSection = document.getElementById(`section-${year}`);
-                    if (targetSection) {
-                        targetSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                        setActiveMarker(year);
-                        yearSections.forEach(s => s.classList.toggle('is-visible', s === targetSection));
-                    }
+                item.addEventListener('click', (event) => {
+                   event.preventDefault(); // Prevent default anchor behavior if any
+                   const year = item.dataset.year;
+                   const targetSection = document.getElementById(`section-${year}`);
+
+                   if (targetSection) {
+                       currentlyVisibleYear = year; // Track the year we are navigating to
+
+                       // Temporarily unobserve to prevent scroll trigger during smooth scroll
+                       yearSections.forEach(s => sectionObserver.unobserve(s));
+
+                       targetSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+
+                       // Manually set active states immediately
+                       setActiveMarker(year);
+                       yearSections.forEach(s => s.classList.toggle('is-visible', s === targetSection));
+
+                       // Re-observe after a short delay (allow scroll animation to start)
+                       setTimeout(() => {
+                           yearSections.forEach(s => sectionObserver.observe(s));
+                           // Reset tracker slightly later to ensure scroll listener doesn't override immediately
+                           setTimeout(() => { currentlyVisibleYear = null; }, 750); // Adjust delay if needed
+                       }, 50); // Adjust delay if needed
+                   }
                 });
             });
 
+            // --- Initial Setup ---
+            const initiallyActiveItem = document.querySelector('.timeline-item.active');
+            let initialYear = null;
+            if (initiallyActiveItem) {
+                initialYear = initiallyActiveItem.dataset.year;
+            } else if (timelineItems.length > 0) {
+                 initialYear = timelineItems[0].dataset.year; // Fallback to first
+                 timelineItems[0].classList.add('active');
+            }
 
-            const initialActiveSection = document.querySelector('.year-section.is-visible');
-             if (initialActiveSection) {
-                const initialVideo = initialActiveSection.querySelector('.carousel-video');
-                 const initialCarouselItem = initialVideo?.closest('.carousel-item');
-                 if (initialVideo && initialCarouselItem?.classList.contains('active')) {
-                    initialVideo.play().catch(error => {
-                        console.warn("Initial autoplay prevented: ", error);
-                    });
-                }
+            const initialSection = document.querySelector(`.year-section[data-year="${initialYear}"]`);
+             if (initialSection) {
+                 // Ensure initial section starts visible (it already has .is-visible in HTML, but good practice)
+                 initialSection.classList.add('is-visible');
+                 // Try to play initial video if it's in the active slide
+                 const initialCarouselItem = initialSection.querySelector('.carousel-item.active');
+                 if (initialCarouselItem) {
+                    const initialVideo = initialCarouselItem.querySelector('.carousel-video');
+                    if (initialVideo) {
+                       initialVideo.play().catch(error => { console.warn("Initial autoplay prevented: ", error); });
+                    }
+                 }
+             } else if (yearSections.length > 0) { // Fallback if no active section specified
+                 yearSections[0].classList.add('is-visible');
+                 if(!initialYear && timelineItems.length > 0) setActiveMarker(yearSections[0].dataset.year);
              }
 
-        });
+        }); // End DOMContentLoaded
     </script>
 </body>
 </html>
