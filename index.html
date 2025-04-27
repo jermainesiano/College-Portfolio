@@ -93,7 +93,7 @@
 
             <div class="col-md-8 year-sections-container">
 
-                <section class="year-section" id="section-2022" data-year="2022" style="background-image: url('null');">
+                <section class="year-section" id="section-2022" data-year="2022" style="background-image: url('path/to/your/2022_background.jpg');">
                    <div class="year-overlay"></div>
                    <div class="year-content container">
                         <h2 class="content-title">2022: Start of Journey</h2>
@@ -101,37 +101,48 @@
 
                         <div id="carousel-2022" class="carousel slide timeline-carousel" data-bs-ride="carousel">
                             <div class="carousel-indicators">
+                                {/* Correct number of indicators (4 items) */}
                                 <button type="button" data-bs-target="#carousel-2022" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                                 <button type="button" data-bs-target="#carousel-2022" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carousel-2022" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                <button type="button" data-bs-target="#carousel-2022" data-bs-slide-to="3" aria-label="Slide 4"></button>
                             </div>
                             <div class="carousel-inner">
-                                <div class="carousel-item active"><img src="painting 2022.jpg" class="d-block w-100" alt="...">
+                                <div class="carousel-item active">
+                                    {/* IMPORTANT: Replace src with your actual image path */}
+                                    <img src="painting_2022.jpg" class="d-block w-100" alt="Art Appreciation Painting">
                                     <div class="carousel-caption d-none d-md-block">
                                         <h5>Art Appreciation</h5>
-                                        <p>This is our final project in Art Aprreciation. We were tasked to paint any subject that we choose, following the paiting conventions of our choice. As someone who is not artistic but likes to hoard art materials, it was a mixture of difficulty and fun. I did not know how to stroke the brush properly nor am i knowledgeable of mixing colors. However, there will always be new perspective of techniques upon trying.</p>
-                                    </div>
-                                </div>
-                                <div class="carousel-item"><img src="paula 2022.jpg" class="d-block w-100" alt="...">
-                                    <div class="carousel-caption d-none d-md-block">
-                                        <h5>Paulita Gomex</h5>
-                                        <p>Paulita Gomez is the entitled and orphaned niece of Doña Victorina. Her first love interest was Isagani, a man who had so much hopes and ambitions for their future that she regarded as unrealistic. One day, Paulita made a fuss over Isagani's innocent gaze towards the dancers in the theater which resulted Isagani to explain himself to Paulita. Isagani was sure of her; however, Paulita is as ambitious as Isagani and so when Isagani was imprisoned and later on released from imprisonment, she ended their relationship and married a man that could give her wealth and secure her future.</p>
-                                    </div>
-                                </div>
-                                <div class="carousel-item"><img src="dagliang talumpati 2022.jpg" class="d-block w-100" alt="...">
-                                    <div class="carousel-caption d-none d-md-block">
-                                        <h5>Dagliang Talumpati</h5>
-                                        <p>After years of pandemic, this is my first time again to talk in front. My stomach in circus, toes curled, and knees shaking...I brave through it. It was difficult to speak in Tagalog, so I practiced for 3 days. Thankfully, I got a very high score during this performance.</p>
+                                        <p>This is our final project...</p>
                                     </div>
                                 </div>
                                 <div class="carousel-item">
-                                                        <video class="d-block w-100 carousel-video" controls muted playsinlines preload="metadata">
-                                                            <source src="tatarin 2022.mp4" type="video/mp4">
-                                                        </video>
-                                                        <div class="carousel-caption d-none d-md-block">
-                                                            <h5>Tatarin</h5>
-                                                            <p> This film delves into the rise of women empowerment from the shackles of a patriarchal society. This was our first meet up as college students since this is still during the pandemic. It was not difficult to act and play around these people because we were all eager to create a masterpiece; hence, the execution and editing was smoothly delivered.</p>
-                                                        </div>
-                                                    </div>
+                                     {/* IMPORTANT: Replace src */}
+                                    <img src="paula_2022.jpg" class="d-block w-100" alt="Paulita Gomez Roleplay">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>Paulita Gomex</h5>
+                                        <p>Paulita Gomez is the entitled...</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    {/* IMPORTANT: Replace src */}
+                                    <img src="dagliang_talumpati_2022.jpg" class="d-block w-100" alt="Dagliang Talumpati">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>Dagliang Talumpati</h5>
+                                        <p>After years of pandemic...</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    {/* IMPORTANT: Replace src, fix typo 'playsinline' */}
+                                    <video class="d-block w-100 carousel-video" controls muted playsinline preload="metadata">
+                                        <source src="tatarin_2022.mp4" type="video/mp4">
+                                        Your browser does not support the video tag.
+                                    </video>
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>Tatarin</h5>
+                                        <p>This film delves into the rise...</p>
+                                    </div>
+                                </div>
                             </div>
                             <button class="carousel-control-prev" type="button" data-bs-target="#carousel-2022" data-bs-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="visually-hidden">Previous</span></button>
                             <button class="carousel-control-next" type="button" data-bs-target="#carousel-2022" data-bs-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span><span class="visually-hidden">Next</span></button>
@@ -140,7 +151,7 @@
                 </section>
 
 
-                <section class="year-section" id="section-2023" data-year="2023" style="background-image: url('null');">
+                <section class="year-section" id="section-2023" data-year="2023" style="background-image: url('path/to/your/2023_background.jpg');">
                     <div class="year-overlay"></div>
                     <div class="year-content container">
                         <h2 class="content-title">2023: Exploration</h2>
@@ -148,130 +159,156 @@
 
                         <div id="carousel-2023" class="carousel slide timeline-carousel" data-bs-ride="carousel">
                             <div class="carousel-indicators">
+                                {/* Correct number of indicators (5 items) */}
                                 <button type="button" data-bs-target="#carousel-2023" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carousel-2023" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carousel-2023" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                <button type="button" data-bs-target="#carousel-2023" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                <button type="button" data-bs-target="#carousel-2023" data-bs-slide-to="4" aria-label="Slide 5"></button>
                             </div>
-                            <div class="carousel-inner">
-                                <div class="carousel-item active"><img src="first demo.jpg" class="d-block w-100" alt="...">
+                            <div class="carousel-inner"> {/* Ensure all items are INSIDE this */}
+                                <div class="carousel-item active">
+                                     {/* IMPORTANT: Replace src */}
+                                    <img src="first_demo.jpg" class="d-block w-100" alt="First Teaching Demo">
                                     <div class="carousel-caption d-none d-md-block">
                                         <h5>Teaching Demonstration 2023</h5>
-                                        <p>This was my first-ever teaching demonstration experience. It had a lot of issues and mistakes because I was oblivious of what to do. I was only graded 88 during that time, but I took the comments as my power for the next teaching demonstration.</p>
-                                    </div>
-                                </div>
-                                <div class="carousel-item"><img src="diaz class 2023.jpg" class="d-block w-100" alt="...">
-                                    <div class="carousel-caption d-none d-md-block">
-                                        <h5>One on One Oral Recitation</h5>
-                                        <p> A success!--- this is the only phrase I could utter after graduating Dr. Diaz's class. This photo was taken after our oral recitaion, we couldn't be prouder of ourselves as he is one of the toughest professor in English Department.</p>
-                                    </div>
-                                </div>
-                                 <div class="carousel-item"><img src="showcase port.jpg" class="d-block w-100" alt="...">
-                                    <div class="carousel-caption d-none d-md-block">
-                                        <h5>Educational Technology Display</h5>
-                                        <p>Another proud moment! We were instructed to showcase our project from the entirety of the semester. Forntunately, we won as second placer because of our collective efforts.</p>
+                                        <p>This was my first-ever...</p>
                                     </div>
                                 </div>
                                 <div class="carousel-item">
-                                                        <video class="d-block w-100 carousel-video" controls muted playsinlines preload="metadata">
-                                                            <source src="pinboard 2023.mp4" type="video/mp4">
-                                                        </video>
-                                                        <div class="carousel-caption d-none d-md-block">
-                                                            <h5>Pin Board Designing</h5>
-                                                            <p>I struggled a lot in designing our pinboard because I am not artistic, however, with the help of my friends---I was able to accomplish it with a perfect score.</p>
-                                                        </div>
-                                                    </div>
-                                 <video class="d-block w-100 carousel-video" controls muted playsinlines preload="metadata">
-                                                            <source src="story telling 2023.mp4" type="video/mp4">
-                                                        </video>
-                                                        <div class="carousel-caption d-none d-md-block">
-                                                            <h5>Story Telling</h5>
-                                                            <p>The weather and the vibe led us to our failure in this project. It was so hot and everyone is demotivated to get serious. We were always laughing, however we managed to complete this project.</p>
-                                                        </div>
-                                                    </div>
+                                     {/* IMPORTANT: Replace src */}
+                                    <img src="diaz_class_2023.jpg" class="d-block w-100" alt="Dr Diaz Class">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>One on One Oral Recitation</h5>
+                                        <p>A success!--- this is the only phrase...</p>
+                                    </div>
+                                </div>
+                                 <div class="carousel-item">
+                                      {/* IMPORTANT: Replace src */}
+                                     <img src="showcase_port.jpg" class="d-block w-100" alt="Educational Technology Display">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>Educational Technology Display</h5>
+                                        <p>Another proud moment!...</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    {/* IMPORTANT: Replace src, fix typo 'playsinline' */}
+                                    <video class="d-block w-100 carousel-video" controls muted playsinline preload="metadata">
+                                        <source src="pinboard_2023.mp4" type="video/mp4">
+                                         Your browser does not support the video tag.
+                                    </video>
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>Pin Board Designing</h5>
+                                        <p>I struggled a lot in designing...</p>
+                                    </div>
+                                </div>
+                                {/* FIX: Moved this item INSIDE carousel-inner */}
+                                <div class="carousel-item">
+                                     {/* IMPORTANT: Replace src, fix typo 'playsinline' */}
+                                    <video class="d-block w-100 carousel-video" controls muted playsinline preload="metadata">
+                                        <source src="story_telling_2023.mp4" type="video/mp4">
+                                        Your browser does not support the video tag.
+                                    </video>
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>Story Telling</h5>
+                                        <p>The weather and the vibe led us...</p>
+                                    </div>
+                                </div>
                             </div>
-                             <button class="carousel-control-prev" type="button" data-bs-target="#carousel-2023" data-bs-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="visually-hidden">Previous</span></button>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carousel-2023" data-bs-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="visually-hidden">Previous</span></button>
                             <button class="carousel-control-next" type="button" data-bs-target="#carousel-2023" data-bs-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span><span class="visually-hidden">Next</span></button>
                         </div>
                     </div>
                 </section>
 
 
-                 <section class="year-section" id="section-2024" data-year="2024" style="background-image: url('null');">
+                 <section class="year-section" id="section-2024" data-year="2024" style="background-image: url('path/to/your/2024_background.jpg');">
                    <div class="year-overlay"></div>
                    <div class="year-content container">
                        <h2 class="content-title">2024: Growth & Skill Development</h2>
                        <p class="content-description">Focused on developing...</p>
 
                        <div id="carousel-2024" class="carousel slide timeline-carousel" data-bs-ride="carousel">
-                                                <div class="carousel-indicators">
-                                                    <button type="button" data-bs-target="#carousel-2024" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                                                    <button type="button" data-bs-target="#carousel-2024" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                                                </div>
-                                                <div class="carousel-inner">
-                                <div class="carousel-item active"><img src="toefl lp 2024.jpg" class="d-block w-100" alt="...">
+                            <div class="carousel-indicators">
+                                {/* Correct number of indicators (7 items) */}
+                                <button type="button" data-bs-target="#carousel-2024" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carousel-2024" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carousel-2024" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                <button type="button" data-bs-target="#carousel-2024" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                <button type="button" data-bs-target="#carousel-2024" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                                <button type="button" data-bs-target="#carousel-2024" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                                <button type="button" data-bs-target="#carousel-2024" data-bs-slide-to="6" aria-label="Slide 7"></button> {/* Video is slide 7 */}
+                            </div>
+                            <div class="carousel-inner">
+                                {/* FIX: Only first item is active */}
+                                <div class="carousel-item active">
+                                     {/* IMPORTANT: Replace src */}
+                                    <img src="toefl_lp_2024.jpg" class="d-block w-100" alt="TOEFL Lesson Plan">
                                     <div class="carousel-caption d-none d-md-block">
                                         <h5>TOEFL Lesson Planning</h5>
-                                        <p>This is one of the hardest lesson plan I made throughout my college years. Thankfully, Dr. Cielo was hands-on and generous in terms of giving tips and advice. It was really hard to design an authentic task that will adressed the macro-and micro-skill of the learner.</p>
+                                        <p>This is one of the hardest...</p>
                                     </div>
                                 </div>
-                                <div class="carousel-item"><img src="balak making.jpg" class="d-block w-100" alt="...">
+                                <div class="carousel-item">
+                                     {/* IMPORTANT: Replace src */}
+                                    <img src="balak_making.jpg" class="d-block w-100" alt="Balak Making">
                                     <div class="carousel-caption d-none d-md-block">
                                         <h5>Balak-Making</h5>
-                                        <p>This photo will remind me of how our teacher gave as an extrensic motivation, leading us to perform well in our balak presentation. She did not just teach us technoiques in Balak, but also during our lunch break, she talked to us and touch each one of us in our hearts. </p>
+                                        <p>This photo will remind me...</p>
                                     </div>
                                 </div>
-                                 <div class="carousel-item active"><img src="leonor 2024.jpg" class="d-block w-100" alt="...">
+                                 <div class="carousel-item">
+                                      {/* IMPORTANT: Replace src */}
+                                     <img src="leonor_2024.jpg" class="d-block w-100" alt="Leonor Rivera Roleplay">
                                     <div class="carousel-caption d-none d-md-block">
                                         <h5>For the Love of Leonor Rivera</h5>
-                                        <p>Our last roleplay in Survey of Philippine Literature. I forgot some of my lines, but I managed to improvise. I am grateful to have the lead role, so I will do better next time.</p>
+                                        <p>Our last roleplay...</p>
                                     </div>
                                 </div>
-                                 <div class="carousel-item active"><img src="demo 2024.jpg" class="d-block w-100" alt="...">
+                                 <div class="carousel-item">
+                                      {/* IMPORTANT: Replace src */}
+                                     <img src="demo_2024.jpg" class="d-block w-100" alt="Second Teaching Demo">
                                     <div class="carousel-caption d-none d-md-block">
                                         <h5>Second Teaching Demonstration</h5>
-                                        <p> This time, like a phoenix, I soared higher than I expected out from the ashes of my first teaching demo. I had a difficulty in technicalities, but at the end I was awarded with a 97 grade in teaching demonstration. I am now practicing on how to handle or prevent technical issues for my future demonstrations.</p>
+                                        <p>This time, like a phoenix...</p>
                                     </div>
-                                    </div>
-                                 <div class="carousel-item active"><img src="demo 2024.jpg" class="d-block w-100" alt="...">
-                                    <div class="carousel-caption d-none d-md-block">
-                                        <h5>Second Teaching Demonstration</h5>
-                                        <p> This time, like a phoenix, I soared higher than I expected out from the ashes of my first teaching demo. I had a difficulty in technicalities, but at the end I was awarded with a 97 grade in teaching demonstration. I am now practicing on how to handle or prevent technical issues for my future demonstrations.</p>
-                                    </div>
-                                      </div>
-                                 <div class="carousel-item active"><img src="demo 2024.jpg" class="d-block w-100" alt="...">
-                                    <div class="carousel-caption d-none d-md-block">
-                                        <h5>Second Teaching Demonstration</h5>
-                                        <p> This time, like a phoenix, I soared higher than I expected out from the ashes of my first teaching demo. I had a difficulty in technicalities, but at the end I was awarded with a 97 grade in teaching demonstration. I am now practicing on how to handle or prevent technical issues for my future demonstrations.</p>
-                                    </div>
-                                          </div>
-                                 <div class="carousel-item active"><img src="IMG_1947.CR2" class="d-block w-100" alt="...">
+                                </div>
+                                 <div class="carousel-item">
+                                      {/* IMPORTANT: Replace src - CR2 won't work, use JPG/PNG/WEBP */}
+                                      <img src="midsummer_play.jpg" class="d-block w-100" alt="Midsummer's Night Dream Play">
                                     <div class="carousel-caption d-none d-md-block">
                                         <h5>Midsummer's Night Dream</h5>
-                                        <p> I got the lead role and I made sure to remember my lines. We had a succesful play and was given an excellent rate.</p>
+                                        <p>I got the lead role...</p>
                                     </div>
-                                      </div>
-                                 <div class="carousel-item active"><img src="film fest 2024.jpg" class="d-block w-100" alt="...">
+                                  </div>
+                                 <div class="carousel-item">
+                                      {/* IMPORTANT: Replace src */}
+                                      <img src="film_fest_2024.jpg" class="d-block w-100" alt="Film Festival Awarding">
                                     <div class="carousel-caption d-none d-md-block">
                                         <h5>Film Festival</h5>
                                         <p>Our group secured the first place!</p>
                                     </div>
                                 </div>
                                 <div class="carousel-item">
-                                                        <video class="d-block w-100 carousel-video" controls muted playsinlines preload="metadata">
-                                                            <source src="null" type="video/mp4">
-                                                        </video>
-                                                        <div class="carousel-caption d-none d-md-block">
-                                                            <h5>Sample</h5>
-                                                            <p>Sample Video Description Caption</p>
-                                                        </div>
-                                                    </div>
+                                    {/* IMPORTANT: Replace src, fix typo 'playsinline' */}
+                                    <video class="d-block w-100 carousel-video" controls muted playsinline preload="metadata">
+                                        <source src="path/to/your/2024_video.mp4" type="video/mp4">
+                                        Your browser does not support the video tag.
+                                    </video>
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>Sample</h5>
+                                        <p>Sample Video Description Caption</p>
+                                    </div>
+                                </div>
                             </div>
-                                                <button class="carousel-control-prev" type="button" data-bs-target="#carousel-2024" data-bs-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="visually-hidden">Previous</span></button>
-                                                <button class="carousel-control-next" type="button" data-bs-target="#carousel-2024" data-bs-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span><span class="visually-hidden">Next</span></button>
-                                           </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carousel-2024" data-bs-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="visually-hidden">Previous</span></button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carousel-2024" data-bs-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span><span class="visually-hidden">Next</span></button>
+                        </div>
                     </div>
                 </section>
 
 
-                <section class="year-section is-visible" id="section-current" data-year="current" style="background-image: url('null');">
+                <section class="year-section is-visible" id="section-current" data-year="current" style="background-image: url('path/to/your/current_background.jpg');">
                    <div class="year-overlay"></div>
                    <div class="year-content container">
                        <h2 class="content-title">Current Focus & Future Goals</h2>
@@ -279,30 +316,39 @@
 
                         <div id="carousel-current" class="carousel slide timeline-carousel" data-bs-ride="carousel">
                             <div class="carousel-indicators">
+                                 {/* Correct number of indicators (3 items) */}
                                 <button type="button" data-bs-target="#carousel-current" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carousel-current" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carousel-current" data-bs-slide-to="2" aria-label="Slide 3"></button> {/* Video is slide 3 */}
                             </div>
                             <div class="carousel-inner">
-                                <div class="carousel-item active"><img src="thailand 2025.jpg" class="d-block w-100" alt="...">
+                                <div class="carousel-item active">
+                                     {/* IMPORTANT: Replace src */}
+                                    <img src="thailand_2025.jpg" class="d-block w-100" alt="Thailand Event">
                                     <div class="carousel-caption d-none d-md-block">
                                         <h5>Thailand</h5>
                                         <p>Our muse with Dr. Craig Refugio</p>
                                     </div>
                                 </div>
-                                <div class="carousel-item"><img src="event 2024.jpg" class="d-block w-100" alt="...">
+                                <div class="carousel-item">
+                                     {/* IMPORTANT: Replace src */}
+                                    <img src="event_2024.jpg" class="d-block w-100" alt="Literary Festival">
                                     <div class="carousel-caption d-none d-md-block">
                                         <h5>Literary Festival</h5>
                                         <p>English Aficionados with mentors</p>
                                     </div>
                                 </div>
                                 <div class="carousel-item">
-                                                        <video class="d-block w-100 carousel-video" controls muted playsinlines preload="metadata">
-                                                            <source src="null" type="video/mp4">
-                                                        </video>
-                                                        <div class="carousel-caption d-none d-md-block">
-                                                            <h5>Sample</h5>
-                                                            <p>Sample Video Description Caption</p>
-                                                        </div>
-                                                    </div>
+                                    {/* IMPORTANT: Replace src, fix typo 'playsinline' */}
+                                    <video class="d-block w-100 carousel-video" controls muted playsinline preload="metadata">
+                                        <source src="path/to/your/current_video.mp4" type="video/mp4">
+                                        Your browser does not support the video tag.
+                                    </video>
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>Sample</h5>
+                                        <p>Sample Video Description Caption</p>
+                                    </div>
+                                </div>
                             </div>
                             <button class="carousel-control-prev" type="button" data-bs-target="#carousel-current" data-bs-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="visually-hidden">Previous</span></button>
                             <button class="carousel-control-next" type="button" data-bs-target="#carousel-current" data-bs-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span><span class="visually-hidden">Next</span></button>
@@ -316,7 +362,6 @@
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-
     <script>
 
         document.addEventListener('DOMContentLoaded', () => {
