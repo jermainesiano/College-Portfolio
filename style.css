@@ -12,7 +12,7 @@ body {
     position: relative;
     height: 100vh;
     /* IMPORTANT: Replace with your hero background */
-    background-image: url('path/to/your/hero_background.png');
+    background-image: url('background_screen.png');
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
