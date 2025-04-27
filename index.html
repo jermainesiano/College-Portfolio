@@ -202,6 +202,33 @@
             const timelineList = document.querySelector('.timeline-items');
 
 
+            const allCarousels = document.querySelectorAll('.carousel');
+            const allCarouselVideos = document.querySelectorAll('.carousel-video'); 
+
+            allCarousels.forEach(carousel => {
+                carousel.addEventListener('slide.bs.carousel', (event) => {
+                    const currentActiveItem = carousel.querySelector('.carousel-item.active');
+                    if (currentActiveItem) {
+                        const video = currentActiveItem.querySelector('.carousel-video');
+                        if (video && !video.paused) {
+                            video.pause();
+                        }
+                    }
+                });
+
+                carousel.addEventListener('slid.bs.carousel', (event) => {
+                    const newActiveItem = carousel.querySelector('.carousel-item.active');
+                    if (newActiveItem) {
+                        const video = newActiveItem.querySelector('.carousel-video');
+                        if (video) {
+                            video.play().catch(error => {
+                                console.warn("Autoplay prevented: ", error);
+                            });
+                        }
+                    }
+                });
+            });
+
             function setActiveMarker(year) {
 
                 let activeItem = null;
@@ -215,12 +242,6 @@
                 });
                 return activeItem;
             }
-
-
-            function updateProgressLine() {
-
-            }
-
 
             const sectionObserverOptions = {
                 root: null,
@@ -284,6 +305,16 @@
                  if(!initialYear) setActiveMarker(yearSections[0].dataset.year);
              }
 
+             const initialActiveSection = document.querySelector('.year-section.is-visible');
+             if (initialActiveSection) {
+                const initialVideo = initialActiveSection.querySelector('.carousel-video');
+                 const initialCarouselItem = initialVideo?.closest('.carousel-item');
+                 if (initialVideo && initialCarouselItem?.classList.contains('active')) {
+                    initialVideo.play().catch(error => {
+                        console.warn("Initial autoplay prevented: ", error);
+                    });
+                }
+             }
 
         });
     </script>
