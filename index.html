@@ -362,44 +362,42 @@
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-    <script>
-
+        <script>
         document.addEventListener('DOMContentLoaded', () => {
             const timelineItems = document.querySelectorAll('.timeline-item');
             const yearSections = document.querySelectorAll('.year-section');
             const timelineProgress = document.querySelector('.timeline-progress');
             const timelineList = document.querySelector('.timeline-items');
-
-
             const allCarousels = document.querySelectorAll('.carousel');
-            const allCarouselVideos = document.querySelectorAll('.carousel-video'); 
+            const allCarouselVideos = document.querySelectorAll('.carousel-video');
 
             allCarousels.forEach(carousel => {
                 carousel.addEventListener('slide.bs.carousel', (event) => {
                     const currentActiveItem = carousel.querySelector('.carousel-item.active');
                     if (currentActiveItem) {
                         const video = currentActiveItem.querySelector('.carousel-video');
-                        if (video && !video.paused) {
-                            video.pause();
-                        }
+                        if (video && !video.paused) { video.pause(); }
                     }
                 });
-
                 carousel.addEventListener('slid.bs.carousel', (event) => {
                     const newActiveItem = carousel.querySelector('.carousel-item.active');
                     if (newActiveItem) {
                         const video = newActiveItem.querySelector('.carousel-video');
                         if (video) {
-                            video.play().catch(error => {
-                                console.warn("Autoplay prevented: ", error);
-                            });
+                            video.play().catch(error => { console.warn("Autoplay prevented: ", error); });
                         }
                     }
                 });
             });
 
-            function setActiveMarker(year) {
+            allCarouselVideos.forEach(video => {
+                video.addEventListener('click', (event) => {
+                    event.stopPropagation();
+                });
+            });
 
+
+            function setActiveMarker(year) {
                 let activeItem = null;
                 timelineItems.forEach(item => {
                     if (item.dataset.year === year) {
@@ -417,35 +415,13 @@
                 rootMargin: '0px',
                 threshold: 0.6
             };
-            const sectionObserverCallback = (entries, observer) => {
-
-               entries.forEach(entry => {
-                    const targetYear = entry.target.dataset.year;
-                    if (entry.isIntersecting && entry.intersectionRatio >= 0.6) {
-                        entry.target.classList.add('is-visible');
-                        setActiveMarker(targetYear);
-                    } else {
-                        entry.target.classList.remove('is-visible');
-                    }
-                });
-                 let mostVisibleSection = null;
-                 yearSections.forEach(section => {
-                     if (section.classList.contains('is-visible')) {
-                        mostVisibleSection = section;
-                     }
-                 });
-                 if(mostVisibleSection){
-                     setActiveMarker(mostVisibleSection.dataset.year);
-                 }
-            };
+            const sectionObserverCallback = (entries, observer) => {};
             const sectionObserver = new IntersectionObserver(sectionObserverCallback, sectionObserverOptions);
             yearSections.forEach(section => sectionObserver.observe(section));
 
-
             timelineItems.forEach(item => {
                 item.addEventListener('click', () => {
-
-                   const year = item.dataset.year;
+                    const year = item.dataset.year;
                     const targetSection = document.getElementById(`section-${year}`);
                     if (targetSection) {
                         targetSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
@@ -456,33 +432,13 @@
             });
 
 
-
-            const initiallyActiveItem = document.querySelector('.timeline-item.active');
-            let initialYear = null;
-
-             if (initiallyActiveItem) {
-                initialYear = initiallyActiveItem.dataset.year;
-            } else if (timelineItems.length > 0) {
-                 initialYear = timelineItems[0].dataset.year;
-                 timelineItems[0].classList.add('active');
-            }
-             const initialSection = document.querySelector(`.year-section[data-year="${initialYear}"]`);
-             if (initialSection) {
-                 initialSection.classList.add('is-visible');
-             } else if (yearSections.length > 0) {
-                 yearSections[0].classList.add('is-visible');
-                 if(!initialYear) setActiveMarker(yearSections[0].dataset.year);
-             }
-
-             const initialActiveSection = document.querySelector('.year-section.is-visible');
+            const initialActiveSection = document.querySelector('.year-section.is-visible');
              if (initialActiveSection) {
-                const initialVideo = initialActiveSection.querySelector('.carousel-video');
+                 const initialVideo = initialActiveSection.querySelector('.carousel-video');
                  const initialCarouselItem = initialVideo?.closest('.carousel-item');
                  if (initialVideo && initialCarouselItem?.classList.contains('active')) {
                     initialVideo.play().catch(error => {
                         console.warn("Initial autoplay prevented: ", error);
-                    });
-                }
              }
 
         });
