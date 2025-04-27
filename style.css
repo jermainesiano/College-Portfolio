@@ -166,7 +166,7 @@ main.container {
 
 .timeline-visual-col {
     top: 0;
-    height: 100vh;
+    align-self: flex-start;
     padding-left: 5%;
     z-index: 10;
     background-color: #1a2a40;
